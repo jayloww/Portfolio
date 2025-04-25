@@ -5,3 +5,17 @@
 *{
   font-family: Outfit;
 }
+
+.scroll-container {
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable vertical snapping */
+}
+
+section {
+  height: 100vh; /* Each section takes full viewport height */
+  scroll-snap-align: start; /* Snap to the start of each section */
+  scroll-snap-stop: always; /* Ensure each section is fully viewed before moving to the next */
+  padding-top: 70px; /* Adjust this value to match your navbar's height */
+  box-sizing: border-box; /* Include padding in the element's total height */
+}

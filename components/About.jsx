@@ -43,8 +43,10 @@ function About({ isDarkMode }) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.8 }}
         className='flex-1'>
-            <p className='mb-10 max-w-2xl font-Ovo'>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
-
+            <p className='mb-10 max-w-2xl font-Ovo'>
+            I’m a passionate Digital Designer who thrives at the intersection of design and technology. <br />
+            My work is driven by a fascination with digital tools and their potential to create experiences that feel intuitive, engaging, and beautifully engineered.
+            </p>
             <motion.ul 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

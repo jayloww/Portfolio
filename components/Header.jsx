@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+    <div id='top' className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
       <motion.div
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
@@ -25,7 +25,7 @@ const Header = () => {
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 100}}
-        className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Frontend web developer based in Munich.
+        className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Digital Designer located in Munich
       </motion.h1>
       
       <motion.p 
@@ -33,7 +33,8 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I am an aspiring frontend web developer with a passion for creating visually stunning and user-friendly websites.
+        I design digital experiences that feel effortless, intentional, and visually striking.
+        By blending design and technology, I create solutions that make complexity feel simple.
       </motion.p>
 
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

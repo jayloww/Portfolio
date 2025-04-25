@@ -2,13 +2,16 @@
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import About from "@/components/About";
-import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
+import useSnapScroll from "@/services/SmothScrollSnap";
+
 
 export default function Home() {
+  // Enable the scroll snap functionality with all section IDs including the footer
+  useSnapScroll(['top', 'about', 'work', 'contact', 'footer']);
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -35,7 +38,6 @@ export default function Home() {
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />

@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 
 const Footer = ({ isDarkMode }) => {
   return (
-    <div className='mt-20'>
+    <div id='footer' className='mt-20'>
       <div className='text-center'>
         <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='logo' className='w-36 mx-auto mb-2'/>
 
