@@ -106,7 +106,6 @@ const useSnapScroll = (sectionIds) => {
         
         window.addEventListener('wheel', handleScroll, {passive: false});
         window.addEventListener('keydown', handleKeyDown);
-        window.addEventListener('keyup', () => setCurrentKey(''));
         window.addEventListener('hashchange', () => setHash(window.location.hash));
         
         return () => {
@@ -115,7 +114,6 @@ const useSnapScroll = (sectionIds) => {
             })
             window.removeEventListener('wheel', handleScroll);
             window.removeEventListener('keydown', handleKeyDown);
-            window.removeEventListener('keyup', () => setCurrentKey(''));
             window.removeEventListener('hashchange', () => setHash(window.location.hash));
         }
     }, [ sectionIds]);
