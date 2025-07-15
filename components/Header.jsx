@@ -33,7 +33,7 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I design digital experiences that feel effortless, intentional, and visually striking.
+        I design digital experiences that feel effortless, intentional, and visually appealing.
         By blending design and technology, I create solutions that make complexity feel simple.
       </motion.p>
 

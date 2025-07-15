@@ -22,7 +22,7 @@ const useSnapScroll = (sectionIds) => {
         const index = sectionIds.indexOf(hashValue)
         
         if (index !== -1) {
-            console.log("index", index)
+            setActiveSection(index)
         }
     }, [hash])
 
@@ -72,7 +72,7 @@ const useSnapScroll = (sectionIds) => {
     const handleKeyDown = (e) => {
         if(!sections) return
         
-        if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === ' ') {
             e.preventDefault()
             
             if (e.key === 'ArrowUp') {
@@ -80,6 +80,9 @@ const useSnapScroll = (sectionIds) => {
             }
             if (e.key === 'ArrowDown') {
                 scroll(1)
+            }
+            if (e.key === ' ') {
+                scroll(1) 
             }
         }
     }

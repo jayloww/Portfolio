@@ -78,24 +78,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Reimagining Fast Fashion:\nThe Leab Rebranding',
+        description: 'University project rebraing SHEIN with a bold and sustainable new identity',
+        bgImage: '/WORK_LeabRebranding.png',
+        bgcolor: '#184238',
+        fontcolor: '#ffffff',
+        transparency: '0.95'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Globe Country Selector',
+        description: 'A playful University project for exploring the world with 3D Webdesign',
+        bgImage: '/WORK_3DGlobe.png',
+        bgcolor: '#000000',
+        fontcolor: '#ffffff',
+        transparency: '0.90'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Survey App for Live Events',
+        description: 'Work project designing a simple, intuitive survey tool for real-time event feedback',
+        bgImage: '/WORK_f&rSurvey.png',
+        bgcolor: '#F0F4F5',
+        fontcolor: '#FF41E3',
+        transparency: '0.90'
     },
 ]
 

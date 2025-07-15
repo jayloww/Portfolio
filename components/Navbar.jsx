@@ -32,13 +32,16 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <Image src={assets.header_bg_color} alt="" className='w-full' priority />
     </div>
 
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20' : ''}`}>
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-500 ease-in-out ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20' : ''}`}>
         <a href="#top">
-            <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="" className= 'w-28 cursor-pointer mr-14' />
+            <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="" className= 'w-14 cursor-pointer mr-14' />
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'} `}>
-            <li><a className='font-Ovo' href="#top">Home</a></li>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'}`}>
+            <li><a className='font-Ovo' href="#top">
+              Home
+              <span className="absolute left-0 bottom-0 h-[1.5px] w-0 bg-current transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a></li>
             <li><a className='font-Ovo' href="#about">About me</a></li>
             {/* <li><a className='font-Ovo' href="#services">Services</a></li> */}
             <li><a className='font-Ovo' href="#work">My Work</a></li>
